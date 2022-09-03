@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/swiper-hero.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
+      <div class="hero__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
       <header class="header">
         <div class="header__container">
           <div class="header__logo">
@@ -38,6 +53,54 @@
           </div>
         </div>
       </header>
+
+      <main class="main">
+        <div class="main__container">
+          <section class="what-we-do">
+            <h2 class="title">WHAT WE DO</h2>
+            <div class="trade">
+              <div class="trade-img">
+                <img src="./images/wha-we-do/img1.png" alt="" />
+              </div>
+
+              <div class="trade-text">
+                <h4 class="trade-sub-title">ONE WORLD</h4>
+                <h3 class="trade-title">TRADE CENTER</h3>
+                <p class="trade-content">
+                  Increasing prosperity in our lives can be accomplished by
+                  having the right frame of mind. The truth is, our thoughts are
+                  very powerful.
+                </p>
+                <button class="trade-details">MORE DETAILS</button>
+                <p class="trade-place">
+                   New York City, United States - 1776 feet
+                </p>
+              </div>
+            </div>
+
+            <div class="commerce">
+              <div class="commerce-text">
+                <h4 class="commerce-sub-title">INTERNATIONAL</h4>
+                <h3 class="commerce-title">COMMERCE CENTRE</h3>
+                <p class="commerce-content">
+                  Successful businesses have many things in common, today we’ll
+                  look at the big ‘R’ of recognition and how a digital
+                  advertising network may help.
+                </p>
+                <button class="commerce-details">MORE DETAILS</button>
+                <p class="commerce-place"> Hong Kong - 1588 feet</p>
+              </div>
+
+              <div class="commerce-img">
+                <img src="./images/wha-we-do/img2.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
