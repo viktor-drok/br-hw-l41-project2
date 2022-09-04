@@ -4,27 +4,21 @@
 }
 
 .swiper-wrapper {
+  position: relative;
   max-width: 1600px;
   height: 100vh;
 }
 
 .swiper-slide {
-  text-align: center;
   font-size: 18px;
-  background: rgba(32, 186, 111, 0.322);
-
+  /* background: url(../images/hero/hero-bgc.png) center center repeat; */
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+}
+
+.swiper-slide {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
+  flex-direction: column;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -33,4 +27,53 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-pagination {
+  margin-right: 55px;
+}
+
+.hero__swiper .swiper-pagination span {
+  margin-bottom: 40px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  background: none;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-image img {
+  height: 100%;
+}
+
+.swiper-slide-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.swiper-slide-text {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #ffffff;
 }
